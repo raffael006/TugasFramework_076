@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perhitungan Array</title>
+</head>
+
+<body>
+
+    <h1>Perhitungan Array - T3_076</h1>
+
+    <div id="hasil"></div>
+
+    <script>
+
+        function hitungArray(arr) {
+
+            let minimum = Math.min(...arr);
+            let maksimum = Math.max(...arr);
+
+            let total = 0;
+
+            for (let i = 0; i < arr.length; i++) {
+                total += arr[i];
+            }
+
+            let rataRata = total / arr.length;
+
+            return {
+                minimum: minimum,
+                maksimum: maksimum,
+                rataRata: rataRata
+            };
+        }
+
+        const angka = [10, 20, 30, 40, 50];
+
+        const hasil = hitungArray(angka);
+
+        document.getElementById("hasil").innerHTML = `
+            <p>Array: [${angka.join(", ")}]</p>
+            <p>Nilai Minimum: ${hasil.minimum}</p>
+            <p>Nilai Maksimum: ${hasil.maksimum}</p>
+            <p>Nilai Rata-rata: ${hasil.rataRata}</p>
+        `;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Program Pencetak Angka</title>
+</head>
+
+<body>
+
+    <h1>Program Pencetak Angka - T2_076</h1>
+
+    <div id="hasil"></div>
+
+    <script>
+
+        let hasil = "";
+
+        for (let i = 1; i <= 100; i++) {
+
+            if (i % 3 === 0 && i % 5 === 0) {
+                hasil += "MI2A";
+            }
+            else if (i % 3 === 0) {
+                hasil += "MI";
+            }
+            else if (i % 5 === 0) {
+                hasil += "2A";
+            }
+            else {
+                hasil += i;
+            }
+
+            if (i < 100) {
+                hasil += ", ";
+            }
+        }
+
+        document.getElementById("hasil").innerHTML = hasil;
+
+    </script>
+
+</body>
+
+</html>

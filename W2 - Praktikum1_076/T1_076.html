@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Konversi Suhu</title>
+</head>
+
+<body>
+    <h1>Konversi Suhu</h1>
+    <form id="formSuhu">
+        <label for="suhu">Suhu:</label>
+        <input type="number" id="suhu" step="0.01" required />
+        <br /><br />
+        <label for="konversi">Jenis Konversi:</label>
+        <select id="konversi" required>
+            <option value="CtoF">Celsius ke Fahrenheit</option>
+            <option value="CtoR">Celsius ke Reamur</option>
+            <option value="FtoC">Fahrenheit ke Celsius</option>
+            <option value="FtoR">Fahrenheit ke Reamur</option>
+            <option value="RtoC">Reamur ke Celsius</option>
+            <option value="RtoF">Reamur ke Fahrenheit</option>
+        </select>
+        <br /><br />
+        <button type="submit">Konversi</button>
+    </form>
+    <p id="hasil"></p>
+
+    <script src="T1_076.js"></script>
+</body>
+
+</html>
